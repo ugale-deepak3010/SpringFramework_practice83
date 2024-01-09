@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.deepspring.simple82mavenproject</groupId>
+	<artifactId>simple82mavenproject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>simple82mavenproject</name>
+	<description>simple 82 maven project
+		In this project I added every dependency manually.
+		I copied dependency from mvn repository.
+		I added Parent node so other depenedencies for version is not required.
+		Then  I added properties in java which my default v17 if I want 1.8 so I can use that.
+		Build plugins is also I added manually
+		I updated maven project for evrything goes good.
+		I created 1 main class and tested as console project.
+		After that I add @SpingBootApplication annotation and passed class.
+		After that I added Controller.
+		
+	</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.1</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

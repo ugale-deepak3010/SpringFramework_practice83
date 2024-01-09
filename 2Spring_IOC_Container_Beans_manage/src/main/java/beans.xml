@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd" >
+
+	<bean id="engine" class="com.SpringFrameTest.com.Bike" >
+		<property name="color" value="Blue" ></property> <!-- property is optional -->
+	</bean>
+	
+	<!--  <bean id="engine" class="com.SpringFrameTest.com.Bike" ></bean>  -->
+	
+</beans>
+
